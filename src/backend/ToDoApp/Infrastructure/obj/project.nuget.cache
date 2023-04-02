@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xSpXr1y86xfk5bwXvwcWwkhcdTIoU0kritOmsTTXfoWJJIogRZx+r4AWaSk4AW3iMgSQ5tphGtDvfXq2t9/67Q==",
+  "success": true,
+  "projectFilePath": "D:\\ToDoApp\\Infrastructure\\Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Franco\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512"
+  ],
+  "logs": []
+}

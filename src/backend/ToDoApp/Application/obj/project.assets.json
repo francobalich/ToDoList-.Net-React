@@ -1,0 +1,118 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "InputEntities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/InputEntities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InputEntities.dll": {}
+        }
+      },
+      "OutputEntities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "InputEntities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/OutputEntities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OutputEntities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "InputEntities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/InputEntities.csproj",
+      "msbuildProject": "../Entities/InputEntities.csproj"
+    },
+    "OutputEntities/1.0.0": {
+      "type": "project",
+      "path": "../OutputEntities/OutputEntities.csproj",
+      "msbuildProject": "../OutputEntities/OutputEntities.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "InputEntities >= 1.0.0",
+      "OutputEntities >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Franco\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\ToDoApp\\Application\\Application.csproj",
+      "projectName": "Application",
+      "projectPath": "D:\\ToDoApp\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\Franco\\.nuget\\packages\\",
+      "outputPath": "D:\\ToDoApp\\Application\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Franco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\ToDoApp\\Entities\\InputEntities.csproj": {
+              "projectPath": "D:\\ToDoApp\\Entities\\InputEntities.csproj"
+            },
+            "D:\\ToDoApp\\OutputEntities\\OutputEntities.csproj": {
+              "projectPath": "D:\\ToDoApp\\OutputEntities\\OutputEntities.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
