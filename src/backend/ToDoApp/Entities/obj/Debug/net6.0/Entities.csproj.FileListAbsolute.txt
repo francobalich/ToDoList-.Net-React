@@ -1,0 +1,12 @@
+D:\ToDoApp\Entities\bin\Debug\net6.0\Entities.deps.json
+D:\ToDoApp\Entities\bin\Debug\net6.0\Entities.dll
+D:\ToDoApp\Entities\bin\Debug\net6.0\Entities.pdb
+D:\ToDoApp\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+D:\ToDoApp\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\ToDoApp\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+D:\ToDoApp\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+D:\ToDoApp\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+D:\ToDoApp\Entities\obj\Debug\net6.0\Entities.dll
+D:\ToDoApp\Entities\obj\Debug\net6.0\refint\Entities.dll
+D:\ToDoApp\Entities\obj\Debug\net6.0\Entities.pdb
+D:\ToDoApp\Entities\obj\Debug\net6.0\ref\Entities.dll

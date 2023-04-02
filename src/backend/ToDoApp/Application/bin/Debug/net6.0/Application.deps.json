@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Application/1.0.0": {
+        "dependencies": {
+          "InputEntities": "1.0.0",
+          "OutputEntities": "1.0.0"
+        },
+        "runtime": {
+          "Application.dll": {}
+        }
+      },
+      "InputEntities/1.0.0": {
+        "runtime": {
+          "InputEntities.dll": {}
+        }
+      },
+      "OutputEntities/1.0.0": {
+        "dependencies": {
+          "InputEntities": "1.0.0"
+        },
+        "runtime": {
+          "OutputEntities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InputEntities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OutputEntities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
