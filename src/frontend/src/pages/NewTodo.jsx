@@ -26,7 +26,6 @@ export const NewTodo = () => {
       state:true
     }
     let resp = await toDoApi.post('/',data)
-    console.log(resp);
     navigate('/', { replace: true })
   }
   return (
