@@ -3,3 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  background: linear-gradient(130.04deg, #120466 6.16%, rgba(16, 0, 43, 0.838542) 82.04%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

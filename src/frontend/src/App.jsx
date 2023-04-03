@@ -9,12 +9,12 @@ function App() {
      return
   }
   return (
-    <div className="App">
-      <TodoList title="Hoy" />
-      <TodoList title="Mañana" />
-      TodoList
+    <>
+      <div className="App">
+        <TodoList title="Tareas de hoy" />
+      </div>
       <AddButton />
-    </div>
+    </>
   )
 }
 
