@@ -6,7 +6,7 @@
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "ConnectionStrings__ToDoAppConnectionString": "Data Source=DESKTOP-V64L5LO;Initial Catalog=ToDoDB;Integrated Security=true;"
+        "ConnectionStrings__ToDoAppConnectionString": "Data Source=.;Initial Catalog=ToDoDB;Integrated Security=True"
       },
       "dotnetRunMessages": true,
       "applicationUrl": "https://localhost:7105;http://localhost:5186"
