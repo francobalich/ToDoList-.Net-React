@@ -18,7 +18,7 @@ public class ItemsController : ControllerBase
     private readonly IDeleteItemUseCase _deleteItemUseCase;
     private readonly IUpdateItemUseCase _updateItemUseCase;
 
-    public ItemsController(IAddItemUseCase addItemUseCase, IGetAllItemsUseCase getAllItemsUseCase, IGetItemByIdUseCase getByIdItemUseCase, IDeleteItemUseCase deleteItemUseCase, IUpdateItemUseCase updateItemUseCase, ILogger<ItemsController> logger)
+    public ItemsController(IAddItemUseCase addItemUseCase, IGetAllItemsUseCase getAllItemsUseCase, IGetItemByIdUseCase getByIdItemUseCase, IDeleteItemUseCase deleteItemUseCase, IUpdateItemUseCase updateItemUseCase)
     {
         _addItemUseCase = addItemUseCase;
         _getAllItemsUseCase = getAllItemsUseCase;
