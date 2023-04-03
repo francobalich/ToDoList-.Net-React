@@ -28,12 +28,15 @@ public class ItemsController : ControllerBase
         _updateItemUseCase = updateItemUseCase;
     }
 
+    //GET Items
     [HttpGet]
     public async Task<IActionResult> GetAll() => Ok(await _getAllItemsUseCase.Handle());
 
+    //GET Items/{id}
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id) => Ok(await _getByIdItemUseCase.Handle(id));
 
+    //POST Items
     [HttpPost]
     public async Task<IActionResult> AddAsync(AddQueryItem addQueryItem)
     {
@@ -47,6 +50,7 @@ public class ItemsController : ControllerBase
         return Ok();
     }
 
+    //PUT Items/{id}
     [HttpPut]
     public async Task<IActionResult> Update(Item updatedItem)
     {
@@ -54,6 +58,7 @@ public class ItemsController : ControllerBase
         return Ok();
     }
 
+    //DELETE Items/{id}
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {
