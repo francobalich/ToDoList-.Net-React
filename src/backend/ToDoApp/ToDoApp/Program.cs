@@ -26,6 +26,7 @@ WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -50,7 +51,7 @@ builder.Services.AddScoped<IDbConnection>(db => new SqlConnection(builder.Config
 //allow cors
 builder.Services.AddCors(p => p.AddPolicy("ToDoApp", builder =>
 {
-    _ = builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
 }));
 
 WebApplication app = builder.Build();
@@ -60,8 +61,8 @@ app.UseExceptionHandler("/error");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    _ = app.UseSwagger();
-    _ = app.UseSwaggerUI();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 //use cors configuration
