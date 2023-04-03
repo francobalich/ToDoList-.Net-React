@@ -13,7 +13,7 @@ export const TodoList = ({title}) => {
   getToDosApi().then((resp)=>{
     setTodos(resp)
   })
- }, [])
+ }, [todos])
   return (
     <>
     <Title title={title}/>
