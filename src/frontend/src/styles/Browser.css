@@ -23,8 +23,7 @@
   height: 50px;
   font-family: 'Open Sans';
   font-size: 26px;
-  background: linear-gradient(101.7deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.2) 21.5%, rgba(255, 255, 255, 0.28) 21.51%, rgba(255, 255, 255, 0) 45.14%), radial-gradient(100% 144.66% at 0% 0%, rgba(140, 52, 241, 0.8) 0%, rgba(148, 103, 221, 0.8) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  box-shadow: 0px 20px 20px -10px rgba(169, 99, 215, 0.4);
+  background: #0060df;
   border-radius: 10px;
   border: none;
 }
