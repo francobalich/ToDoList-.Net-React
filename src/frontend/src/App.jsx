@@ -1,5 +1,6 @@
 import { toDoApi } from '../api'
 import './App.css'
+import {TodoList, AddButton} from './components'
 
 function App() {
   const testApi = async ()=>{
@@ -9,9 +10,10 @@ function App() {
   }
   return (
     <div className="App">
-        <button onClick={testApi}>
-          haceme clic
-        </button>
+      <TodoList title="Hoy" />
+      <TodoList title="Mañana" />
+      TodoList
+      <AddButton />
     </div>
   )
 }

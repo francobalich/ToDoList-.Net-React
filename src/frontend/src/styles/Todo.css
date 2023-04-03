@@ -1,0 +1,23 @@
+.todoItem{
+  font-family: 'Open Sans';
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.checkbox{
+
+}
+.todo_info{
+
+}
+.todo_name{
+    font-weight: 600;
+    font-size: 16px;
+    color: #737373;
+}
+.todo_time{
+  font-weight: 600;
+  font-size: 14px;
+  color: #A3A3A3;
+}

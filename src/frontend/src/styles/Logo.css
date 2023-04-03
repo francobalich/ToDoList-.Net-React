@@ -1,0 +1,11 @@
+.logoContainer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+.logo{
+    width: 60px;
+    border-radius: 50%;
+    filter: drop-shadow(0px 6px 12px rgba(0, 0, 0, 0.2));
+}
