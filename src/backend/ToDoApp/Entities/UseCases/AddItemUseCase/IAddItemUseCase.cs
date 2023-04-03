@@ -1,6 +1,6 @@
 ﻿using CoreEntities.Items;
 
-namespace Entities.UseCases.AddItemUseCase;
+namespace InputPort.UseCases.AddItemUseCase;
 
 public interface IAddItemUseCase
 {

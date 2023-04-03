@@ -1,4 +1,4 @@
-﻿namespace Infrastructure.Repositories.DeleteItemRepositories;
+﻿namespace OutputPort.Repositories.IDeleteItemRepositories;
 
 public interface IDeleteItemRepository
 {

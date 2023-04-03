@@ -1,6 +1,6 @@
 ﻿using CoreEntities.Items;
 
-namespace Entities.UseCases.GetByIdItemUseCase;
+namespace InputPort.UseCases.GetItemByIdUseCase;
 
 public interface IGetItemByIdUseCase
 {

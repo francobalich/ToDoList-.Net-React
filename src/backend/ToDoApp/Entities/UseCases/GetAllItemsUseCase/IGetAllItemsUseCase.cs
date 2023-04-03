@@ -1,6 +1,6 @@
 ﻿using CoreEntities.Items;
 
-namespace Entities.UseCases.GetAllItems;
+namespace InputPort.UseCases.GetAllItemsUseCase;
 
 public interface IGetAllItemsUseCase
 {

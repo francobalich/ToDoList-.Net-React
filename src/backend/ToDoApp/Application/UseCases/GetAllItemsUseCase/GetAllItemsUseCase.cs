@@ -1,6 +1,6 @@
 ﻿using CoreEntities.Items;
-using Entities.UseCases.GetAllItems;
-using Infrastructure.Repositories.GetAllItemsRepositories;
+using InputPort.UseCases.GetAllItemsUseCase;
+using OutputPort.Repositories.IGetAllItemsRepositories;
 
 namespace Application.UseCases.GetAllItemsUseCase;
 

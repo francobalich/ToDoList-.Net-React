@@ -1,5 +1,6 @@
 ﻿using CoreEntities.Items;
 using Dapper;
+using OutputPort.Repositories.IGetAllItemsRepositories;
 using System.Data;
 
 namespace Infrastructure.Repositories.GetAllItemsRepositories

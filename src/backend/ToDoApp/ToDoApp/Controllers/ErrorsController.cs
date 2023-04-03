@@ -10,7 +10,10 @@ namespace ToDoApp.Controllers;
 public class ErrorsController : ControllerBase
 {
     [Route("error")]
-    public IActionResult Error() => GetErrorResultByException(HttpContext.Features.Get<IExceptionHandlerFeature>()!.Error);
+    public IActionResult Error()
+    {
+        return GetErrorResultByException(HttpContext.Features.Get<IExceptionHandlerFeature>()!.Error);
+    }
 
     private IActionResult GetErrorResultByException(Exception ex)
     {
@@ -19,7 +22,6 @@ public class ErrorsController : ControllerBase
         {
             return NotFound(ex.Message);
         }
-
         return StatusCode(500, ex.Message);
     }
 }

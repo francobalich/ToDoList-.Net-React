@@ -1,5 +1,6 @@
 ﻿using CoreEntities.Items;
 using Dapper;
+using OutputPort.Repositories.IAddItemRepositories;
 using System.Data;
 
 namespace Infrastructure.Repositories.AddItemRepositories
@@ -17,7 +18,7 @@ namespace Infrastructure.Repositories.AddItemRepositories
         {
             await _connection.ExecuteAsync(
                 "INSERT INTO [dbo].[Item] " +
-                "VALUES (@Name, @Date, @Description, @State)", 
+                "VALUES (@Name, @Date, @Description, @State)",
             new
             {
                 item.Name,

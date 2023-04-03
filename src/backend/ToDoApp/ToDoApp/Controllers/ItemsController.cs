@@ -1,9 +1,9 @@
 using CoreEntities.Items;
-using Entities.UseCases.AddItemUseCase;
-using Entities.UseCases.DeleteItemUseCase;
-using Entities.UseCases.GetAllItems;
-using Entities.UseCases.GetByIdItemUseCase;
-using Entities.UseCases.IUpdateItemUseCase;
+using InputPort.UseCases.AddItemUseCase;
+using InputPort.UseCases.DeleteItemUseCase;
+using InputPort.UseCases.GetAllItemsUseCase;
+using InputPort.UseCases.GetItemByIdUseCase;
+using InputPort.UseCases.UpdateItemUseCase;
 using Microsoft.AspNetCore.Mvc;
 using ToDoApp.Params;
 
@@ -30,11 +30,17 @@ public class ItemsController : ControllerBase
 
     //GET Items
     [HttpGet]
-    public async Task<IActionResult> GetAll() => Ok(await _getAllItemsUseCase.Handle());
+    public async Task<IActionResult> GetAll()
+    {
+        return Ok(await _getAllItemsUseCase.Handle());
+    }
 
     //GET Items/{id}
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetById(int id) => Ok(await _getByIdItemUseCase.Handle(id));
+    public async Task<IActionResult> GetById(int id)
+    {
+        return Ok(await _getByIdItemUseCase.Handle(id));
+    }
 
     //POST Items
     [HttpPost]

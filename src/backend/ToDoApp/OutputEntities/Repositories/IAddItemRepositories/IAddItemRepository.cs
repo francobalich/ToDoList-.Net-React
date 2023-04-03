@@ -1,6 +1,6 @@
 ﻿using CoreEntities.Items;
 
-namespace Infrastructure.Repositories.AddItemRepositories;
+namespace OutputPort.Repositories.IAddItemRepositories;
 
 public interface IAddItemRepository
 {

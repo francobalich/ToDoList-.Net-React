@@ -1,7 +1,7 @@
 ﻿using CoreEntities.Items;
-using Entities.UseCases.GetByIdItemUseCase;
-using Entities.UseCases.IUpdateItemUseCase;
-using Infrastructure.Repositories.UpdateItemRepositories;
+using InputPort.UseCases.GetItemByIdUseCase;
+using InputPort.UseCases.UpdateItemUseCase;
+using OutputPort.Repositories.IUpdateItemRepositories;
 
 namespace Application.UseCases.UpdateItemUseCase;
 

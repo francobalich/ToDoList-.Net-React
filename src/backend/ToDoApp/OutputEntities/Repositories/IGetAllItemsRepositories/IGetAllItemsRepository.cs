@@ -1,6 +1,6 @@
 ﻿using CoreEntities.Items;
 
-namespace Infrastructure.Repositories.GetAllItemsRepositories;
+namespace OutputPort.Repositories.IGetAllItemsRepositories;
 
 public interface IGetAllItemsRepository
 {
