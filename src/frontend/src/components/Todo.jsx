@@ -15,17 +15,18 @@ export const Todo = ({id,name,state, description,date}) => {
       name,
       date,
       description,
-      state: checked
+      state: !checked
     }
     console.log(todo);
-    //await toDoApi.put(`/${id}`)
+    let resp=await toDoApi.put(`/`,todo)
+    console.log(resp);
   }
   return (
     <div className="todoItem">
 
       <img src={deleteBtn} alt='Delete button' onClick={deleteOnClick} ></img>
 
-      <input type='checkbox' className='checkbox' onClick={completeOnClick}/>
+      <input type='checkbox' className='checkbox' checked={state} onClick={completeOnClick}/>
       <div className="todo_info">
         <p className={`todo_title ${!checked?"complete":""}`}>{name}</p>
         <p className={`todo_time ${!checked?"complete":""}`}>{`${date.substring(0,10)}`}</p>
