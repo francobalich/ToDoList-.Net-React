@@ -9,6 +9,7 @@
 }
 .browser__input{
   width: 80%;
+  min-width: 400px;
   height: 50px;
   padding: 0 10px;
   border: none;
@@ -17,7 +18,7 @@
   font-size: 26px;
 }
 .browser__btn{
-  width: 20%;
+  min-width: 150px;
   color: white;
   font-weight: bold;
   height: 50px;
@@ -25,5 +26,32 @@
   font-size: 26px;
   background: #0060df;
   border-radius: 10px;
+  border: none;box-shadow: 10px 11px 29px 0px rgba(0,0,0,0.26);
+  -webkit-box-shadow: 10px 11px 29px 0px rgba(0,0,0,0.26);
+  -moz-box-shadow: 10px 11px 29px 0px rgba(0,0,0,0.26);
+}
+.cancel__btn{
+  min-width: 150px;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  font-family: 'Open Sans';
+  font-size: 26px;
+  background: transparent;
+  border-radius: 10px;
   border: none;
+  border: 1px solid rgb(201, 201, 201);
+  box-shadow: 10px 11px 29px 0px rgba(0,0,0,0.26);
+  -webkit-box-shadow: 10px 11px 29px 0px rgba(0,0,0,0.26);
+  -moz-box-shadow: 10px 11px 29px 0px rgba(0,0,0,0.26);
+}
+.cancel__btn:hover{
+  box-shadow: 10px 11px 29px 0px rgba(0,0,0,0.26) inset;
+  -webkit-box-shadow: 10px 11px 29px 0px rgba(0,0,0,0.26) inset;
+  -moz-box-shadow: 10px 11px 29px 0px rgba(0,0,0,0.26) inset;
+}
+.browser__btn:hover{
+  box-shadow: 10px 11px 29px 0px rgba(0,0,0,0.26) inset;
+  -webkit-box-shadow: 10px 11px 29px 0px rgba(0,0,0,0.26) inset;
+  -moz-box-shadow: 10px 11px 29px 0px rgba(0,0,0,0.26) inset;
 }
