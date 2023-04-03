@@ -1,5 +1,5 @@
-﻿using Entities.UseCases.GetAllItems;
-using Entities.UseCases.Items;
+﻿using CoreEntities.Items;
+using Entities.UseCases.GetAllItems;
 using Infrastructure.Repositories.GetAllItemsRepositories;
 
 namespace Application.UseCases.GetAllItemsUseCase;

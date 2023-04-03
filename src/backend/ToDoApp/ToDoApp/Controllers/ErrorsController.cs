@@ -14,6 +14,7 @@ public class ErrorsController : ControllerBase
 
     private IActionResult GetErrorResultByException(Exception ex)
     {
+        //check item not found exception
         if (ex!.GetType() == typeof(ItemNotFoundException))
         {
             return NotFound(ex.Message);

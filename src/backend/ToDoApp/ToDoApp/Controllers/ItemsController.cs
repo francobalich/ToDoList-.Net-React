@@ -1,8 +1,8 @@
+using CoreEntities.Items;
 using Entities.UseCases.AddItemUseCase;
 using Entities.UseCases.DeleteItemUseCase;
 using Entities.UseCases.GetAllItems;
 using Entities.UseCases.GetByIdItemUseCase;
-using Entities.UseCases.Items;
 using Entities.UseCases.IUpdateItemUseCase;
 using Microsoft.AspNetCore.Mvc;
 using ToDoApp.Params;

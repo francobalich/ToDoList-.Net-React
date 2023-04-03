@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Entities\InputPort.csproj" />
-    <ProjectReference Include="..\OutputEntities\OutputPort.csproj" />
   </ItemGroup>
 
 </Project>

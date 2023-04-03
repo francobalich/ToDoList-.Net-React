@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "..\Applicati
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{815A3F5D-546B-40D2-B25D-4AAECB2428BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputEntities", "..\Entities\InputEntities.csproj", "{A2934AA2-53AA-43ED-B3AA-9703DA1A05AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputPort", "..\Entities\InputPort.csproj", "{A2934AA2-53AA-43ED-B3AA-9703DA1A05AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutputEntities", "..\OutputEntities\OutputEntities.csproj", "{A08FA258-EAF7-4815-8C24-F880DA80A0C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutputPort", "..\OutputEntities\OutputPort.csproj", "{A08FA258-EAF7-4815-8C24-F880DA80A0C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreEntities", "..\CoreEntities\CoreEntities.csproj", "{D96F52A0-9A1A-4C0A-A27D-079A4ACFA074}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A08FA258-EAF7-4815-8C24-F880DA80A0C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A08FA258-EAF7-4815-8C24-F880DA80A0C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A08FA258-EAF7-4815-8C24-F880DA80A0C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D96F52A0-9A1A-4C0A-A27D-079A4ACFA074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D96F52A0-9A1A-4C0A-A27D-079A4ACFA074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D96F52A0-9A1A-4C0A-A27D-079A4ACFA074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D96F52A0-9A1A-4C0A-A27D-079A4ACFA074}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

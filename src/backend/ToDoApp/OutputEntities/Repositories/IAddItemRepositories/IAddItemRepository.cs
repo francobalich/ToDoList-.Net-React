@@ -1,4 +1,4 @@
-﻿using Entities.UseCases.Items;
+﻿using CoreEntities.Items;
 
 namespace Infrastructure.Repositories.AddItemRepositories;
 

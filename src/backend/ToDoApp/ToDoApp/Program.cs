@@ -25,21 +25,21 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//use cases
+//DI use cases
 builder.Services.AddScoped<IAddItemUseCase, AddItemUseCase>();
 builder.Services.AddScoped<IDeleteItemUseCase, DeleteItemUseCase>();
 builder.Services.AddScoped<IGetAllItemsUseCase, GetAllItemsUseCase>();
 builder.Services.AddScoped<IGetItemByIdUseCase, GetItemByIdUseCase>();
 builder.Services.AddScoped<IUpdateItemUseCase, UpdateItemUseCase>();
 
-//repos
+//DI repositories
 builder.Services.AddScoped<IAddItemRepository, AddItemRepository>();
 builder.Services.AddScoped<IDeleteItemRepository, DeleteItemRepository>();
 builder.Services.AddScoped<IGetAllItemsRepository, GetAllItemsRepository>();
 builder.Services.AddScoped<IGetItemByIdRepository, GetItemByIdRepository>();
 builder.Services.AddScoped<IUpdateItemRepository, UpdateItemRepository>();
 
-//sql connection
+//DI SQL connection
 builder.Services.AddScoped<IDbConnection>(db => new SqlConnection(builder.Configuration.GetConnectionString("ToDoAppConnectionString")));
 
 //allow cors

@@ -1,4 +1,4 @@
-namespace Entities.UseCases.Items;
+namespace CoreEntities.Items;
 
 public readonly record struct Item
 (

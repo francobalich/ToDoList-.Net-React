@@ -1,5 +1,5 @@
-﻿using Dapper;
-using Entities.UseCases.Items;
+﻿using CoreEntities.Items;
+using Dapper;
 using System.Data;
 
 namespace Infrastructure.Repositories.UpdateItemRepositories
@@ -15,7 +15,11 @@ namespace Infrastructure.Repositories.UpdateItemRepositories
 
         public async Task Execute(Item updatedItem)
         {
-            await _connection.ExecuteAsync("UPDATE [dbo].[Item] SET [Name] = @name, [Date] = @date, [Description] = @description, [State] = @state WHERE id = @id", new
+            await _connection.ExecuteAsync(
+                "UPDATE [dbo].[Item] " +
+                "SET [Name] = @name, [Date] = @date, [Description] = @description, [State] = @state " +
+                "WHERE id = @id", 
+            new
             {
                 updatedItem.Id,
                 updatedItem.Name,

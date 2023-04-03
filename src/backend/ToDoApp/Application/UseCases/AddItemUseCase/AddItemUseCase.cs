@@ -1,5 +1,5 @@
-﻿using Entities.UseCases.AddItemUseCase;
-using Entities.UseCases.Items;
+﻿using CoreEntities.Items;
+using Entities.UseCases.AddItemUseCase;
 using Infrastructure.Repositories.AddItemRepositories;
 
 namespace Application.UseCases.AddItemUseCase;

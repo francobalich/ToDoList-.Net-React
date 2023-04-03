@@ -1,5 +1,5 @@
-﻿using Entities.UseCases.GetByIdItemUseCase;
-using Entities.UseCases.Items;
+﻿using CoreEntities.Items;
+using Entities.UseCases.GetByIdItemUseCase;
 using Entities.UseCases.IUpdateItemUseCase;
 using Infrastructure.Repositories.UpdateItemRepositories;
 

@@ -1,6 +1,6 @@
 ﻿using Application.Exceptions;
+using CoreEntities.Items;
 using Entities.UseCases.GetByIdItemUseCase;
-using Entities.UseCases.Items;
 using Infrastructure.Repositories.GetItemByIdRepositories;
 
 namespace Application.UseCases.GetItemByIdUseCase;
