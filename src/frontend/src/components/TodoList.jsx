@@ -11,7 +11,6 @@ export const TodoList = ({title}) => {
  }
  useEffect(() => {
   getToDosApi().then((resp)=>{
-    console.log(resp);
     setTodos(resp)
   })
  }, [])
@@ -22,7 +21,7 @@ export const TodoList = ({title}) => {
         <Browser />
         {
           todos.map((todo)=>{
-            return<Todo {...todo} />
+            return<Todo key={todo.id} {...todo} />
           })
         }
       </div>
