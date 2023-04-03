@@ -3,43 +3,49 @@ using Application.UseCases.DeleteItemUseCase;
 using Application.UseCases.GetAllItemsUseCase;
 using Application.UseCases.GetItemByIdUseCase;
 using Application.UseCases.UpdateItemUseCase;
-using Entities.UseCases.AddItemUseCase;
-using Entities.UseCases.DeleteItemUseCase;
-using Entities.UseCases.GetAllItems;
-using Entities.UseCases.GetByIdItemUseCase;
-using Entities.UseCases.IUpdateItemUseCase;
 using Infrastructure.Repositories.AddItemRepositories;
 using Infrastructure.Repositories.DeleteItemRepositories;
 using Infrastructure.Repositories.GetAllItemsRepositories;
 using Infrastructure.Repositories.GetItemByIdRepositories;
 using Infrastructure.Repositories.UpdateItemRepositories;
+using InputPort.UseCases.AddItemUseCase;
+using InputPort.UseCases.DeleteItemUseCase;
+using InputPort.UseCases.GetAllItemsUseCase;
+using InputPort.UseCases.GetItemByIdUseCase;
+using InputPort.UseCases.UpdateItemUseCase;
+using OutputPort.Repositories.IAddItemRepositories;
+using OutputPort.Repositories.IDeleteItemRepositories;
+using OutputPort.Repositories.IGetAllItemsRepositories;
+using OutputPort.Repositories.IGetItemByIdRepositories;
+using OutputPort.Repositories.IUpdateItemRepositories;
 using System.Data;
 using System.Data.SqlClient;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//use cases
+//DI use cases
 builder.Services.AddScoped<IAddItemUseCase, AddItemUseCase>();
 builder.Services.AddScoped<IDeleteItemUseCase, DeleteItemUseCase>();
 builder.Services.AddScoped<IGetAllItemsUseCase, GetAllItemsUseCase>();
 builder.Services.AddScoped<IGetItemByIdUseCase, GetItemByIdUseCase>();
 builder.Services.AddScoped<IUpdateItemUseCase, UpdateItemUseCase>();
 
-//repos
+//DI repositories
 builder.Services.AddScoped<IAddItemRepository, AddItemRepository>();
 builder.Services.AddScoped<IDeleteItemRepository, DeleteItemRepository>();
 builder.Services.AddScoped<IGetAllItemsRepository, GetAllItemsRepository>();
 builder.Services.AddScoped<IGetItemByIdRepository, GetItemByIdRepository>();
 builder.Services.AddScoped<IUpdateItemRepository, UpdateItemRepository>();
 
-//sql connection
+//DI SQL connection
 builder.Services.AddScoped<IDbConnection>(db => new SqlConnection(builder.Configuration.GetConnectionString("ToDoAppConnectionString")));
 
 //allow cors
@@ -48,7 +54,7 @@ builder.Services.AddCors(p => p.AddPolicy("ToDoApp", builder =>
     builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
 }));
 
-var app = builder.Build();
+WebApplication app = builder.Build();
 
 app.UseExceptionHandler("/error");
 

@@ -1,6 +1,6 @@
-﻿using Entities.UseCases.DeleteItemUseCase;
-using Entities.UseCases.GetByIdItemUseCase;
-using Infrastructure.Repositories.DeleteItemRepositories;
+﻿using InputPort.UseCases.DeleteItemUseCase;
+using InputPort.UseCases.GetItemByIdUseCase;
+using OutputPort.Repositories.IDeleteItemRepositories;
 
 namespace Application.UseCases.DeleteItemUseCase;
 

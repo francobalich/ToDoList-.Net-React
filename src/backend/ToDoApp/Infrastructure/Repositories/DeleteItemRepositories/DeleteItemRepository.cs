@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using OutputPort.Repositories.IDeleteItemRepositories;
 using System.Data;
 
 namespace Infrastructure.Repositories.DeleteItemRepositories
@@ -14,7 +15,10 @@ namespace Infrastructure.Repositories.DeleteItemRepositories
 
         public async Task Execute(int id)
         {
-            await _connection.ExecuteAsync("DELETE FROM [dbo].[Item] WHERE Id = @id", new
+            await _connection.ExecuteAsync(
+                "DELETE FROM [dbo].[Item] " +
+                "WHERE Id = @id",
+            new
             {
                 id
             });

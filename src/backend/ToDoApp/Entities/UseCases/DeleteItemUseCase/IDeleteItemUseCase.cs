@@ -1,4 +1,4 @@
-﻿namespace Entities.UseCases.DeleteItemUseCase;
+﻿namespace InputPort.UseCases.DeleteItemUseCase;
 
 public interface IDeleteItemUseCase
 {

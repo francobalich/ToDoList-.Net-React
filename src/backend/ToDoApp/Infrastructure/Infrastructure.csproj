@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OutputEntities\OutputEntities.csproj" />
+    <ProjectReference Include="..\OutputEntities\OutputPort.csproj" />
   </ItemGroup>
 
 </Project>

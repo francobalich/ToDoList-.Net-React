@@ -1,5 +1,6 @@
-﻿using Dapper;
-using Entities.UseCases.Items;
+﻿using CoreEntities.Items;
+using Dapper;
+using OutputPort.Repositories.IGetAllItemsRepositories;
 using System.Data;
 
 namespace Infrastructure.Repositories.GetAllItemsRepositories
@@ -15,7 +16,9 @@ namespace Infrastructure.Repositories.GetAllItemsRepositories
 
         public async Task<IEnumerable<Item>> Execute()
         {
-            return await _connection.QueryAsync<Item>("SELECT [Id],[Name],[Date],[Description],[State] FROM [dbo].[Item]");
+            return await _connection.QueryAsync<Item>(
+                "SELECT [Id],[Name],[Date],[Description],[State] " +
+                "FROM [dbo].[Item]");
         }
     }
 }

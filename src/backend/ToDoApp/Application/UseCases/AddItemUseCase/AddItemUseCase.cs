@@ -1,6 +1,6 @@
-﻿using Entities.UseCases.AddItemUseCase;
-using Entities.UseCases.Items;
-using Infrastructure.Repositories.AddItemRepositories;
+﻿using CoreEntities.Items;
+using InputPort.UseCases.AddItemUseCase;
+using OutputPort.Repositories.IAddItemRepositories;
 
 namespace Application.UseCases.AddItemUseCase;
 

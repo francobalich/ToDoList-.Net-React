@@ -17,9 +17,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Application\Application.csproj" />
-    <ProjectReference Include="..\Entities\InputEntities.csproj" />
+    <ProjectReference Include="..\Entities\InputPort.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
-    <ProjectReference Include="..\OutputEntities\OutputEntities.csproj" />
+    <ProjectReference Include="..\OutputEntities\OutputPort.csproj" />
   </ItemGroup>
 
 </Project>

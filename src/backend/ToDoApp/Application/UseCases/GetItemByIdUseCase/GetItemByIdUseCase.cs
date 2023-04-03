@@ -1,7 +1,7 @@
-﻿using Application.UseCases.Exceptions;
-using Entities.UseCases.GetByIdItemUseCase;
-using Entities.UseCases.Items;
-using Infrastructure.Repositories.GetItemByIdRepositories;
+﻿using Application.Exceptions;
+using CoreEntities.Items;
+using InputPort.UseCases.GetItemByIdUseCase;
+using OutputPort.Repositories.IGetItemByIdRepositories;
 
 namespace Application.UseCases.GetItemByIdUseCase;
 
@@ -16,7 +16,7 @@ public class GetItemByIdUseCase : IGetItemByIdUseCase
 
     public async Task<Item> Handle(int id)
     {
-        var item = await _getItemByIdRepository.Execute(id);
+        Item item = await _getItemByIdRepository.Execute(id);
         return item == default ? throw new ItemNotFoundException(id) : item;
     }
 }

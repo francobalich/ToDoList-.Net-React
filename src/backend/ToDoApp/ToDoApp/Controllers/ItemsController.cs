@@ -1,9 +1,9 @@
-using Entities.UseCases.AddItemUseCase;
-using Entities.UseCases.DeleteItemUseCase;
-using Entities.UseCases.GetAllItems;
-using Entities.UseCases.GetByIdItemUseCase;
-using Entities.UseCases.Items;
-using Entities.UseCases.IUpdateItemUseCase;
+using CoreEntities.Items;
+using InputPort.UseCases.AddItemUseCase;
+using InputPort.UseCases.DeleteItemUseCase;
+using InputPort.UseCases.GetAllItemsUseCase;
+using InputPort.UseCases.GetItemByIdUseCase;
+using InputPort.UseCases.UpdateItemUseCase;
 using Microsoft.AspNetCore.Mvc;
 using ToDoApp.Params;
 
@@ -28,12 +28,21 @@ public class ItemsController : ControllerBase
         _updateItemUseCase = updateItemUseCase;
     }
 
+    //GET Items
     [HttpGet]
-    public async Task<IActionResult> GetAll() => Ok(await _getAllItemsUseCase.Handle());
+    public async Task<IActionResult> GetAll()
+    {
+        return Ok(await _getAllItemsUseCase.Handle());
+    }
 
+    //GET Items/{id}
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetById(int id) => Ok(await _getByIdItemUseCase.Handle(id));
+    public async Task<IActionResult> GetById(int id)
+    {
+        return Ok(await _getByIdItemUseCase.Handle(id));
+    }
 
+    //POST Items
     [HttpPost]
     public async Task<IActionResult> AddAsync(AddQueryItem addQueryItem)
     {
@@ -47,6 +56,7 @@ public class ItemsController : ControllerBase
         return Ok();
     }
 
+    //PUT Items/{id}
     [HttpPut]
     public async Task<IActionResult> Update(Item updatedItem)
     {
@@ -54,6 +64,7 @@ public class ItemsController : ControllerBase
         return Ok();
     }
 
+    //DELETE Items/{id}
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {

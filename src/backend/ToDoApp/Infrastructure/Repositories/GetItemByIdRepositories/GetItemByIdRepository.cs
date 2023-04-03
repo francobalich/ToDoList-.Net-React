@@ -1,5 +1,6 @@
-﻿using Dapper;
-using Entities.UseCases.Items;
+﻿using CoreEntities.Items;
+using Dapper;
+using OutputPort.Repositories.IGetItemByIdRepositories;
 using System.Data;
 
 namespace Infrastructure.Repositories.GetItemByIdRepositories
@@ -15,7 +16,11 @@ namespace Infrastructure.Repositories.GetItemByIdRepositories
 
         public async Task<Item> Execute(int id)
         {
-            return await _connection.QuerySingleOrDefaultAsync<Item>("SELECT [Id],[Name],[Date],[Description],[State] FROM [dbo].[Item] WHERE Id = @id", new
+            return await _connection.QuerySingleOrDefaultAsync<Item>(
+                "SELECT [Id],[Name],[Date],[Description],[State] " +
+                "FROM [dbo].[Item] " +
+                "WHERE Id = @id",
+            new
             {
                 id
             });

@@ -1,6 +1,6 @@
-﻿using Entities.UseCases.Items;
+﻿using CoreEntities.Items;
 
-namespace Infrastructure.Repositories.UpdateItemRepositories;
+namespace OutputPort.Repositories.IUpdateItemRepositories;
 
 public interface IUpdateItemRepository
 {

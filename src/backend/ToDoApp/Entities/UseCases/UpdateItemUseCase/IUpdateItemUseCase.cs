@@ -1,6 +1,6 @@
-﻿using Entities.UseCases.Items;
+﻿using CoreEntities.Items;
 
-namespace Entities.UseCases.IUpdateItemUseCase;
+namespace InputPort.UseCases.UpdateItemUseCase;
 
 public interface IUpdateItemUseCase
 {
