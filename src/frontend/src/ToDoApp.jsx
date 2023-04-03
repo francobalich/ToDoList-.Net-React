@@ -3,7 +3,7 @@ import './App.css'
 import { BrowserRouter } from "react-router-dom"
 import { AppRouter } from './router/AppRouter'
 
-function App() {
+function ToDoApp() {
   const testApi = async ()=>{
      let resp = await toDoApi.get()
      console.log(resp.data);
@@ -16,4 +16,4 @@ function App() {
   )
 }
 
-export default App
+export default ToDoApp
