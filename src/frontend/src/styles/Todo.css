@@ -56,3 +56,8 @@
   text-decoration:line-through;
   opacity: 0.5;
 }
+.newTodoForm{
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}

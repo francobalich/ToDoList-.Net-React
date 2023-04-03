@@ -31,7 +31,7 @@ export const NewTodo = () => {
   return (
     <div className="App">
       <Title title="Nueva tarea"/>
-      <form onSubmit={acceptOnClick}>
+      <form onSubmit={acceptOnClick} className='newTodoForm'>
       <div className='inputContainer'>
         <input
             className="browser__input"
@@ -46,7 +46,7 @@ export const NewTodo = () => {
             name='todoDescription'
             value={todoDescription}
             onChange={onTodoInputChange}
-            placeholder="Descripcion de la tarea"/>
+            placeholder="Descripción de la tarea"/>
           <input
             className="browser__input"
             type="date"
