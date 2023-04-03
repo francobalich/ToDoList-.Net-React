@@ -23,9 +23,9 @@ export const Todo = ({id,name,state, description,date}) => {
   return (
     <div className="todoItem">
 
-      <img src={deleteBtn} alt='Delete button' onClick={deleteOnClick} ></img>
+      <img src={deleteBtn} alt='Delete button' onClick={deleteOnClick}></img>
 
-      <input type='checkbox' className='checkbox' checked={state} onChange={completeOnClick}/>
+      <input type='checkbox' className='checkbox' checked={!state} onChange={completeOnClick}/>
       <div className="todo_info">
         <p className={`todo_title ${!checked?"complete":""}`}>{name}</p>
         <p className={`todo_time ${!checked?"complete":""}`}>{`${date.substring(0,10)}`}</p>

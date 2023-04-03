@@ -18,7 +18,6 @@ export const TodoList = ({title}) => {
     <>
     <Title title={title}/>
       <div className="TodoContainer">
-        <Browser />
         {
           todos.map((todo)=>{
             return<Todo key={todo.id} {...todo} />

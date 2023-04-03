@@ -4,7 +4,7 @@ export const Home = () => {
   return (
     <>
      <div className="App">
-        <TodoList title="Tareas de hoy" />
+        <TodoList title="Lista de tareas" />
       </div>
       <AddButton />
     </>
