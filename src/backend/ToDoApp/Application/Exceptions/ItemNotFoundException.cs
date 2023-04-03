@@ -1,4 +1,4 @@
-﻿namespace Application.UseCases.Exceptions
+﻿namespace Application.Exceptions
 {
     public class ItemNotFoundException : Exception
     {

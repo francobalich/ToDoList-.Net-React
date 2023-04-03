@@ -1,7 +1,9 @@
-﻿using Application.UseCases.Exceptions;
+﻿using Application.Exceptions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+
+namespace ToDoApp.Controllers;
 
 [AllowAnonymous]
 [ApiExplorerSettings(IgnoreApi = true)]
