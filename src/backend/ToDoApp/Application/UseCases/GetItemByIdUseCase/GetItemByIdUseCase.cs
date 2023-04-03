@@ -1,4 +1,4 @@
-﻿using Application.UseCases.Exceptions;
+﻿using Application.Exceptions;
 using Entities.UseCases.GetByIdItemUseCase;
 using Entities.UseCases.Items;
 using Infrastructure.Repositories.GetItemByIdRepositories;
