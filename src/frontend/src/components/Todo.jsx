@@ -1,6 +1,6 @@
 import '../styles/Todo.css'
 import deleteBtn from '../assets/delete.svg'
-export const Todo = () => {
+export const Todo = ({id,name,state, description,date}) => {
   return (
     <div className="todoItem">
 
@@ -8,9 +8,9 @@ export const Todo = () => {
 
       <input type='checkbox' className='checkbox' />
       <div className="todo_info">
-        <p className="todo_title">Tarea N°1</p>
-        <p className="todo_time">12:42 PM</p>
-        <p className="todo_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <p className="todo_title">{name}</p>
+        <p className="todo_time">{date}</p>
+        <p className="todo_description">{description}</p>
       </div>
     </div>
   )
