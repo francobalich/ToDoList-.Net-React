@@ -42,6 +42,12 @@ builder.Services.AddScoped<IUpdateItemRepository, UpdateItemRepository>();
 //sql connection
 builder.Services.AddScoped<IDbConnection>(db => new SqlConnection(builder.Configuration.GetConnectionString("ToDoAppConnectionString")));
 
+//allow cors
+builder.Services.AddCors(p => p.AddPolicy("ToDoApp", builder =>
+{
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
+
 var app = builder.Build();
 
 app.UseExceptionHandler("/error");
@@ -52,6 +58,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//use cors configuration
+app.UseCors("ToDoApp");
 
 app.UseHttpsRedirection();
 

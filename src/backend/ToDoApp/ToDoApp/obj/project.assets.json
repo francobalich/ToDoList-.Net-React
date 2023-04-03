@@ -877,23 +877,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Franco\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\franc\\.nuget\\packages\\": {},
+    "F:\\Archivos de programa\\Visual Studio SDK\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ToDoApp\\ToDoApp\\ToDoApp.csproj",
+      "projectUniqueName": "F:\\Proyectos\\Personales\\ToDoList-.Net-React\\src\\backend\\ToDoApp\\ToDoApp\\ToDoApp.csproj",
       "projectName": "ToDoApp",
-      "projectPath": "D:\\ToDoApp\\ToDoApp\\ToDoApp.csproj",
-      "packagesPath": "C:\\Users\\Franco\\.nuget\\packages\\",
-      "outputPath": "D:\\ToDoApp\\ToDoApp\\obj\\",
+      "projectPath": "F:\\Proyectos\\Personales\\ToDoList-.Net-React\\src\\backend\\ToDoApp\\ToDoApp\\ToDoApp.csproj",
+      "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
+      "outputPath": "F:\\Proyectos\\Personales\\ToDoList-.Net-React\\src\\backend\\ToDoApp\\ToDoApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "F:\\Archivos de programa\\Visual Studio SDK\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Franco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -908,17 +908,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\ToDoApp\\Application\\Application.csproj": {
-              "projectPath": "D:\\ToDoApp\\Application\\Application.csproj"
+            "F:\\Proyectos\\Personales\\ToDoList-.Net-React\\src\\backend\\ToDoApp\\Application\\Application.csproj": {
+              "projectPath": "F:\\Proyectos\\Personales\\ToDoList-.Net-React\\src\\backend\\ToDoApp\\Application\\Application.csproj"
             },
-            "D:\\ToDoApp\\Entities\\InputEntities.csproj": {
-              "projectPath": "D:\\ToDoApp\\Entities\\InputEntities.csproj"
+            "F:\\Proyectos\\Personales\\ToDoList-.Net-React\\src\\backend\\ToDoApp\\Entities\\InputEntities.csproj": {
+              "projectPath": "F:\\Proyectos\\Personales\\ToDoList-.Net-React\\src\\backend\\ToDoApp\\Entities\\InputEntities.csproj"
             },
-            "D:\\ToDoApp\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\ToDoApp\\Infrastructure\\Infrastructure.csproj"
+            "F:\\Proyectos\\Personales\\ToDoList-.Net-React\\src\\backend\\ToDoApp\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "F:\\Proyectos\\Personales\\ToDoList-.Net-React\\src\\backend\\ToDoApp\\Infrastructure\\Infrastructure.csproj"
             },
-            "D:\\ToDoApp\\OutputEntities\\OutputEntities.csproj": {
-              "projectPath": "D:\\ToDoApp\\OutputEntities\\OutputEntities.csproj"
+            "F:\\Proyectos\\Personales\\ToDoList-.Net-React\\src\\backend\\ToDoApp\\OutputEntities\\OutputEntities.csproj": {
+              "projectPath": "F:\\Proyectos\\Personales\\ToDoList-.Net-React\\src\\backend\\ToDoApp\\OutputEntities\\OutputEntities.csproj"
             }
           }
         }
@@ -965,7 +965,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

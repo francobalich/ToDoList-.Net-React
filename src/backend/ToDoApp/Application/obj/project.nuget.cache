@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PP56un/Ec+PgthCZBeSEFk6sykQrz4wstgr0KmoZ9Q2eZf824Ggi28F6cDbWhqqmy/JaYBiTjWroxlb8yd2R+Q==",
+  "dgSpecHash": "Kssi3sGU5rMAuH5wdA2Ec0uxqGZSqcLzgIJ3M+B7J9gJ28B4yoM7SY3Vu6VoivrjUJ7LV9mprFHoxh0loKg+9Q==",
   "success": true,
-  "projectFilePath": "D:\\ToDoApp\\Application\\Application.csproj",
+  "projectFilePath": "F:\\Proyectos\\Personales\\ToDoList-.Net-React\\src\\backend\\ToDoApp\\Application\\Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

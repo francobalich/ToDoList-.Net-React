@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xSpXr1y86xfk5bwXvwcWwkhcdTIoU0kritOmsTTXfoWJJIogRZx+r4AWaSk4AW3iMgSQ5tphGtDvfXq2t9/67Q==",
+  "dgSpecHash": "12hM5yev4SpXN656xX+MkkBaChL3ZldZX9N9qU5dXbBodDXhr3aTnJrgjDDilsC/MqwY1Mx9Okp7sYq6DK31Bw==",
   "success": true,
-  "projectFilePath": "D:\\ToDoApp\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "F:\\Proyectos\\Personales\\ToDoList-.Net-React\\src\\backend\\ToDoApp\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Franco\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512"
+    "C:\\Users\\franc\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512"
   ],
   "logs": []
 }
