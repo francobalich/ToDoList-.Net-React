@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import '../App.css'
 import { Title } from '../components'
 import { useForm } from '../hooks/useForm'
+import { toDoApi } from '../../api'
 
 const todoFormFields = {
   todoName:'',
@@ -16,26 +17,17 @@ export const NewTodo = () => {
   const cancelOnClick=()=>{
     navigate('/', { replace: true })
   }
-  const acceptOnClick=(event)=>{
+  const acceptOnClick=async(event)=>{
     event.preventDefault()
     let data = {
       name:todoName,
       description:todoDescription,
-      date:todoDate
+      date:todoDate,
+      state:true
     }
+    let resp = await toDoApi.post('/',data)
     console.log(data);
-    //navigate('/', { replace: true })
-    //todo: Agregar crear todo
   }
-  const getToDosApi = async ()=>{
-    let data = {
-      "name": name,
-      "description": "string",
-      "state": true
-    }
-    let resp = await toDoApi.post()
-    return resp.data
- }
   return (
     <div className="App">
       <Title title="Nueva tarea"/>
@@ -57,7 +49,8 @@ export const NewTodo = () => {
             placeholder="Descripcion de la tarea"/>
           <input
             className="browser__input"
-            type="text"
+            type="date"
+            min="2023-04-03"
             name='todoDate'
             value={todoDate}
             onChange={onTodoInputChange}
