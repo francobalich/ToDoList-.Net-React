@@ -1,10 +1,16 @@
 import '../styles/Todo.css'
 import deleteBtn from '../assets/delete.svg'
+import { toDoApi } from '../../api'
+
 export const Todo = ({id,name,state, description,date}) => {
+
+  const deleteOnClick = async()=>{
+    await toDoApi.delete(`/${id}`)
+  }
   return (
     <div className="todoItem">
 
-      <img src={deleteBtn} alt='Delete button' ></img>
+      <img src={deleteBtn} alt='Delete button' onClick={deleteOnClick}></img>
 
       <input type='checkbox' className='checkbox' />
       <div className="todo_info">
