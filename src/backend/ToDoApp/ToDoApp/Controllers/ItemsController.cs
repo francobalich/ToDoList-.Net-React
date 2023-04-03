@@ -5,7 +5,6 @@ using InputPort.UseCases.GetAllItemsUseCase;
 using InputPort.UseCases.GetItemByIdUseCase;
 using InputPort.UseCases.UpdateItemUseCase;
 using Microsoft.AspNetCore.Mvc;
-using ToDoApp.Params;
 
 namespace ToDoApp.Controllers;
 
@@ -44,15 +43,9 @@ public class ItemsController : ControllerBase
 
     //POST Items
     [HttpPost]
-    public async Task<IActionResult> AddAsync(AddQueryItem addQueryItem)
+    public async Task<IActionResult> Add(Item item)
     {
-        await _addItemUseCase.Handle(new Item()
-        {
-            Date = DateTime.Now,
-            Description = addQueryItem.Description,
-            Name = addQueryItem.Name,
-            State = addQueryItem.State,
-        });
+        await _addItemUseCase.Handle(item);
         return Ok();
     }
 
