@@ -6,9 +6,9 @@
   position: absolute;
   width: 80px;
   height: 80px;
-  left: 1283px;
+  right: 150px;
   top: calc(50% - 100px/2 + 380px);
-  background: #A934F1;
+  background: #0060df;
 }
 .addButton{
   width: 45%;
