@@ -1,4 +1,5 @@
 import { Todo, Title, Browser } from "./"
+import '../App.css'
 
 export const TodoList = ({title}) => {
   return (

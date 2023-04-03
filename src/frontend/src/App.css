@@ -9,3 +9,8 @@
     backdrop-filter: blur(40px);
     border-radius: 16px;
 }
+.TodoContainer{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
