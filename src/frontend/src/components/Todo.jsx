@@ -15,7 +15,7 @@ export const Todo = ({id,name,state, description,date}) => {
       <input type='checkbox' className='checkbox' />
       <div className="todo_info">
         <p className="todo_title">{name}</p>
-        <p className="todo_time">{date}</p>
+        <p className="todo_time">{`${date.substring(0,10)}`}</p>
         <p className="todo_description">{description}</p>
       </div>
     </div>
