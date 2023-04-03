@@ -1,6 +1,7 @@
 import { toDoApi } from '../api'
 import './App.css'
-import {TodoList, AddButton} from './components'
+import { BrowserRouter } from "react-router-dom"
+import { AppRouter } from './router/AppRouter'
 
 function App() {
   const testApi = async ()=>{
@@ -9,12 +10,9 @@ function App() {
      return
   }
   return (
-    <>
-      <div className="App">
-        <TodoList title="Tareas de hoy" />
-      </div>
-      <AddButton />
-    </>
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   )
 }
 
